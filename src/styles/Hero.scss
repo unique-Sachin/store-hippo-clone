@@ -1,0 +1,40 @@
+header {
+  border: 1px solid black;
+  width: 80%;
+  float: right;
+  display: flex;
+  .header__left {
+    // border: 1px solid red;
+    width: 75%;
+    .hero__main {
+      border: 1px solid red;
+      display: flex;
+
+      .hero__main_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--color-second);
+        gap: 20px;
+        border: 1px solid blue;
+        width: 55%;
+        h1 {
+          font-size: 43px;
+          font-weight: bolder;
+        }
+      }
+      .hero__main__right{
+      border: 1px solid red;
+        width: 45%;
+        text-align: center;
+        img{
+            width: 75%;
+        }
+      }
+    }
+  }
+  .header__right {
+    width: 25%;
+    background-color: var(--color-third);
+  }
+}
