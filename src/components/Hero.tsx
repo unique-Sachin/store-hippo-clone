@@ -12,8 +12,8 @@ const Hero = () => {
           <div className="hero__main_left">
             <h1>Leading Enterprise Ecommerce Platform in India</h1>
             <h2>Build whitelabelled</h2>
-                      <h3>Designed for diverse B2B and B2C business models</h3>
-                      <ButtonPrimary>schedule a demo</ButtonPrimary>
+            <h3>Designed for diverse B2B and B2C business models</h3>
+            <ButtonPrimary>schedule a demo</ButtonPrimary>
           </div>
           <div className="hero__main__right">
             <img

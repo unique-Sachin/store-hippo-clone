@@ -1,15 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-main);
+  border-radius: 10px;
 }
 
 :root {
-    --color-main: #7DB434;
-    --color-second: #202225;
-    --color-third:#53713a;
-    --color-white: #ffffff;
-    --color-black:#000000;
-
+  --color-main: #7db434;
+  --color-second: #202225;
+  --color-third: #53713a;
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
