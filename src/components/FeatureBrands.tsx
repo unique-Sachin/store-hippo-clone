@@ -1,17 +1,24 @@
 import React from "react";
 import "../styles/FeatureBrands.scss";
 const FeatureBrands = () => {
-  const ["logo_amul","logo_berger","logo_mamaease"]
+  const brandLogos = [
+    "logo_amul",
+    "logo_berger",
+    "logo_mamaease",
+    "logo_syngenta",
+    "logo_dow",
+    "logo_whites",
+    "logo_mystore",
+  ];
   return (
     <section className="feature__brands__container">
       <div className="brand__cards">
-        {Array(7)
-          .fill(null)
-          .map((el) => (
-            <div key={el}>
-              <img src="/assets/images/logo_amul.avif" alt="" />
-            </div>
-          ))}
+        {brandLogos.map((el, i) => (
+          //INFO: using index as a key because its a constant array and won't cause index shift
+          <div key={i}>
+            <img src={`/assets/images/${el}.avif`} alt="" />
+          </div>
+        ))}
       </div>
       <div className="brand__des">
         <div>
