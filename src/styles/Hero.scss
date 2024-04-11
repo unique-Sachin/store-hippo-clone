@@ -1,11 +1,17 @@
 header {
   // border: 1px solid black;
-  width: 80%;
-  // float: right;
+  // width: 80%;
   display: flex;
-  .header__left {
+  & > div:first-child,
+  & > div:last-child {
+    width: calc((100% - 1150px) / 2);
+  }
+  & > div:last-child {
+    background-color: var(--color-third);
+  }
+  .header__center {
     // border: 1px solid red;
-    width: 75%;
+    width: 1150px;
     .hero__main {
       // border: 1px solid red;
       display: flex;
@@ -42,8 +48,89 @@ header {
       }
     }
   }
-  .header__right {
-    width: 25%;
-    background-color: var(--color-third);
+}
+
+@media all and (max-width: 1200px) {
+  header {
+    // border: 1px solid black;
+    & > div:first-child,
+    & > div:last-child {
+      width: calc((100% - 850px) / 2);
+    }
+
+    .header__center {
+      // border: 1px solid red;
+      width: 850px;
+      .hero__main {
+        // border: 1px solid red;
+        .hero__main_left {
+          gap: 14px;
+          // border: 1px solid blue;
+          width: 47%;
+          h1 {
+            font-size: 37px;
+            margin-top: 30px;
+          }
+          h2 {
+            font-size: 21px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+        }
+        .hero__main__right {
+          // border: 1px solid red;
+          width: 53%;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 992px) {
+  header {
+    & > div:last-child {
+      background-color: var(--color-white);
+    }
+    .header__center {
+      // border: 1px solid red;
+      padding-bottom: 40px;
+      .hero__main {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        .hero__main_left {
+          gap: 10px;
+          width: 100%;
+          h1 {
+            margin-top: 20px;
+          }
+        }
+        .hero__main__right {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  header {
+    .header__center {
+      .hero__main {
+        .hero__main_left {
+          width: 100%;
+          h1 {
+            font-size: 25px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+          h3 {
+            font-size: 17px;
+          }
+        }
+      }
+    }
   }
 }

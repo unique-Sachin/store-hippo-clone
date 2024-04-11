@@ -6,14 +6,17 @@ import ButtonPrimary from "./ui/Button";
 const Hero = () => {
   return (
     <header>
-      <div className="header__left">
+      <div></div>
+      <div className="header__center">
         <Navbar />
         <div className="hero__main">
           <div className="hero__main_left">
             <h1>Leading Enterprise Ecommerce Platform in India</h1>
             <h2>Build whitelabelled</h2>
             <h3>Designed for diverse B2B and B2C business models</h3>
-            <ButtonPrimary>schedule a demo</ButtonPrimary>
+            <div>
+              <ButtonPrimary>schedule a demo</ButtonPrimary>
+            </div>
           </div>
           <div className="hero__main__right">
             <img
@@ -23,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="header__right"></div>
+      <div></div>
     </header>
   );
 };
