@@ -5,22 +5,24 @@ import ButtonPrimary from "./ui/Button";
 const Navbar = () => {
   return (
     <nav>
-      <div className="logo__div">
-        <img src="assets/images/logo.png" alt="logo" />
-      </div>
-      <div className="home__anchors">
-        <ul>
-          <li>Solutions</li>
-          <li>Develop</li>
-          <li>Examples</li>
-          <li>Pricing</li>
-          <li>Resources</li>
-        </ul>
-        <ButtonPrimary>contact us</ButtonPrimary>
+      <div>
+        <div className="logo__div">
+          <img src="assets/images/logo.png" alt="logo" />
+        </div>
+        <div className="home__anchors">
+          <ul>
+            <li>Solutions</li>
+            <li>Develop</li>
+            <li>Examples</li>
+            <li>Pricing</li>
+            <li>Resources</li>
+          </ul>
+          <ButtonPrimary>contact us</ButtonPrimary>
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="40"
+          height="40"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
